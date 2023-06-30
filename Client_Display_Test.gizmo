@@ -1,0 +1,28 @@
+#! C:/Program Files/Nuke12.2v9/nuke-12.2.9.dll -nx
+version 12.2 v9
+Gizmo {
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos -42
+  ypos -127
+ }
+ OCIODisplay {
+  colorspace scene_linear
+  display MARZ
+  view "Client Look"
+  key1 CCC_PATH
+  value1 "\[getenv CCC_PATH]"
+  key2 LUT_PATH
+  value2 "\[getenv LUT_PATH]"
+  name OCIODisplay1
+  xpos -42
+  ypos -87
+ }
+ Output {
+  name Output1
+  xpos -42
+  ypos 13
+ }
+end_group
